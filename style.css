@@ -156,8 +156,8 @@ button:hover {
   padding-right: 50px;
 }
 
-.heroTextWrapper h1,
-p {
+.heroTextWrapperH1,
+heroTextWrapperP {
   padding-bottom: 30px;
 }
 
@@ -179,7 +179,7 @@ p {
   transition: all 0.3s ease 0s;
 }
 
-.heroTextWrapper h1 {
+.heroTextWrapperH1 {
   color: #055af6;
 }
 
@@ -202,7 +202,7 @@ p {
   justify-content: space-around;
 }
 
-.col-2 img {
+.col-2-Image {
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -244,7 +244,7 @@ p {
   padding-top: 40px;
 }
 
-.committedLogo img {
+.committedLogoImage {
   width: 50px;
   height: 50px;
   margin-right: 10px;
@@ -330,7 +330,6 @@ p {
 
 .hereToHelpCardWrapper {
   width: 450px;
-  /* background-color: green; */
   margin-bottom: 50px;
   height: 450px;
 }
@@ -341,7 +340,6 @@ p {
 }
 
 .hereToHelpCardTextWrapper {
-  /* width: 450px; */
   height: 170px;
   text-align: left;
   padding-left: 0px;
@@ -356,7 +354,6 @@ p {
 .hereToHelpLinkLiWrapper {
   list-style-type: none;
   text-decoration: none;
-  /* background-color: red; */
   width: 150px;
   text-align: left;
   display: inline-flex;
@@ -504,7 +501,7 @@ p {
   height: 60%;
 }
 
-.c .carousel-indicators {
+.carousel-indicators {
   padding-left: 120px;
   padding-right: 110px;
 }
@@ -514,6 +511,11 @@ p {
   width: 150px;
 }
 
+@media (min-width: 1537px) {
+  .footerSectionMobile {
+    display: none;
+  }
+}
 /* 2xl */
 @media (max-width: 1536px) {
   .footerSectionMobile {
@@ -582,6 +584,11 @@ p {
 
   .footerSectionMobile {
     display: none;
+  }
+
+  .footerContentWrapper {
+    padding: 30px;
+    padding-bottom: 10px;
   }
 
   .hereToHelpWrapper {
@@ -705,7 +712,6 @@ p {
 
   .hereToHelpCardWrapper {
     width: 330px;
-    /* background-color: green; */
     margin-bottom: 50px;
     height: 450px;
   }
@@ -766,7 +772,6 @@ p {
   }
 
   .footerMobileLeftWrapper {
-    /* margin: auto; */
     margin-top: 40px;
     position: relative;
     top: 50px;
@@ -879,7 +884,6 @@ p {
 
   .hereToHelpCardWrapper {
     width: 280px;
-    /* background-color: green; */
     margin-bottom: 50px;
     height: 400px;
   }
@@ -895,7 +899,6 @@ p {
     padding-left: 0px;
     font-size: 15px;
     line-height: 25px;
-    /* background-color: red; */
   }
 
   .hereToHelpCardTextWrapper,
@@ -986,13 +989,6 @@ p {
     display: block;
     visibility: visible;
   }
-
-  /* .carouselCardWrapper2 .col-2 {
-    background-color: green;
-    display: block;
-    height: 200px;
-    width: 300px;
-  } */
 
   .carousel-indicators [data-bs-target] {
     background-color: blue;
@@ -1096,12 +1092,10 @@ p {
 
   .hereToHelpWrapper {
     width: 520px;
-    /* margin: auto; */
   }
 
   .hereToHelpCardsRowWrapper {
     display: block;
-    /* justify-content: space-between; */
     height: 1000px;
   }
 
@@ -1114,7 +1108,6 @@ p {
 
   .hereToHelpCardWrapper {
     width: 330px;
-    /* background-color: green; */
     margin-bottom: 50px;
     height: 450px;
   }
@@ -1202,6 +1195,36 @@ p {
 
   .headerWrapper {
     font-size: 0.5rem;
+    display: flex;
+  }
+
+  .contactWrapper {
+    display: flex;
+    justify-content: left;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .contactItemWrapper {
+    width: fit-content;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 8px;
+    padding-left: 0px;
+  }
+
+  .connectWrapper {
+    width: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .headerLogo {
+    width: 50px;
+    height: 40px;
   }
 
   .heroTextWrapper {
@@ -1210,7 +1233,7 @@ p {
   }
 
   .heroTextWrapper h1 {
-    width: 250px;
+    width: 100px;
     position: relative;
   }
 
